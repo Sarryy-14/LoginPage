@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Payment Form </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  
+
+    
+    </style>
+    <h1 align ="center">
+    <font color="red"> 
+    <strong> Payment Form </strong>
+    </font>
+    </h1>
+</head>
+<body style="background-color:yellow">
+    <form action ="">
+        
+        <h2> Contact information </h2>
+        <p> Name: * <input type="text" name="name" required ></p>
+          <fieldset>
+            <legend style="color:rgb(6, 41, 195)"> Gender </legend> 
+            Male <input type ="radio" name="Gender" Id="Male">
+            Female <input type ="radio" name="Gender" Id="Female">
+          </fieldset>
+        
+           <p> Address :<textarea name="address" id="address" cols="100" rows="5"></textarea></p>
+            <p>Email : <input type="'email" name="email" id="email" required> </p>
+            <p>Contact no.: <input type="tel" name="tel" id="tel" required></p>
+            <p> Pincode : <input type ="number" name="pincode" id ="pincode" required></p>
+            
+            <h2> Payment Information </h2>
+            <p> 
+               Card Type :
+               <select name ="card type" id="card type" required >
+                 <option value ="">--Select a Card Type--</option>
+                 <option value ="visa">Visa</option>
+                 <option value ="rupay">Rupay</option>
+                 <option value ="mastercard">Mastercard</option>
+               </select>          
+             </p>
+
+             <p> 
+                Card Number <input type="number" name="card_number" id="card_number" required>
+             </p>
+             <p>
+                Expiration Data:<input type ="date" name="exp_date" id="exp_date" required >      
+            </p>
+             <p>
+               CVV:<input type="password" id="CVV" required>
+             </p>
+             <input type ="Submit" value ="Paynow">
+             <input type ="reset" value ="Back">
+
+             <div>
+               Enter your percentage in he above examination.
+               <input type="range" min="40" max="100" name="percent">
+             </div>
+    </form>
+</body>
+</html>
